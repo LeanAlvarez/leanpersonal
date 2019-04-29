@@ -1,0 +1,67 @@
+{% extends 'core/base.html' %}
+
+{%block title%} Home {%endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+
+
+<h1>Lean Alvarez</h1>
+<span class="subheading">Desarrollador Web Full Stack</span>
+
+{% endblock %}
+{% block content %}
+<!-- servicios -->
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mt-3 mb-3 "><u>Servicios Freelance</u></h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="div d-flex justify-content-center">
+                <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="div">
+                <p class="text-center">Desarrollo web adaptado a todo tipo de dispositivos, para que sus usuarios y clientes accedan desde su pc, laptop o smartphone.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="div d-flex justify-content-center">
+                        <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="div">
+                        <p class="text-center">Optimización de su app o sitio web para que los buscadores como google posicionen mejor su marca, asi obtener mayor numero de visitas, y futuros clientes.</p>
+                    </div>
+        </div>
+        <div class="col-md-4">
+                <div class="div d-flex justify-content-center">
+                        <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="div">
+                        <p class="text-center">Consultoria sobre la situación de su web, conozca con un analisis detallado sobre porqué a su web le esta costando llegar a la primera paginas de google o recibir visitas.</p>
+                    </div>
+        </div>
+    </div>
+</div>
+<!-- /servicios -->
+<hr>
+<div class="container">
+
+	<div class="row">
+        <br>
+
+		<div class="jumbotron">
+          <h2 class="text-center mb-4">Precios accesibles para Pymes y Startups</h2>
+          <p class="text-center">
+                Entendiendo la necesidad de dar a conocer la marca de tu Pyme o emprendimiento, <b>te ofrezco precios accesibles</b> para páginas de aterrizaje, blogs, o simplemente páginas informativas de tu marca. Contactá conmigo, <u>cuéntame tu idea y desarrollemos juntos el sitio que dará a conocer tu emprendimiento al mundo</u>.</p>
+          <p class="text-center mt-4"><a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contactame</a></p>
+        </div>
+
+	</div>
+
+</div>
+
+
+
+
+{% endblock %}
+

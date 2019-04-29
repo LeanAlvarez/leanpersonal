@@ -1,0 +1,32 @@
+
+{% extends 'core/base.html' %}
+
+{%block title%} Acerca de {%endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+
+<h1>Acerca de</h1>
+<span class="subheading">Biografia</span>
+
+
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+
+
+
+        <img class="img-fluid avatar" src="{% static 'core/img/mia.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Lean Alvarez</h2>
+        <p>Soy desarrollador web y consultor SEO, ubicado en Colón Entre Ríos. Trabajo como desarrollador web freelance,<u>tengo la suerte de dedicarme a lo que me apasiona: la programación web, el desarrollo y el SEO, lo que me exige estar en constante aprendizaje y crecimiento.</u></p>
+        <p>Informatico de profesión, apasionado por las nuevas tecnologías, autodidacta. Ser programador me permite realizarme como persona, crear, ayudar a otras personas con sus proyectos y generar los mios propios. Así me gano la vida. Programo desde paginas web desde el front-end (lo que ve el cliente), hasta el back-end (la parte del codigo que no se ve), tambien he desarrollado algunas apps moviles.</p>
+        <p>Manejo los lenguajes mas utilizados en el mercado, como html, css javascript y python, también hago consultorias sobre optimización en buscadores, para que sus clientes encuentren su negocio cuando hace una busqueda en google por ejemplo.</p>
+        <p><strong> Te invito a que me contactes y trabajemos juntos.</strong> <u>Sígueme en mis redes sociales o envíame un mensaje.</u> </p>
+    </div>
+</div>
+{% endblock %}
+

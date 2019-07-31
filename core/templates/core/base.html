@@ -16,6 +16,9 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="{% static 'core/css/clean-blog.min.css' %}" rel="stylesheet">
+    <!-- whatsapp   -->
+    <link rel="stylesheet" href="{% static 'core/css/floating-wpp.min.css' %}">
+
     <!-- favocons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{% static 'core/img/apple-icon-57x57.png' %}">
     <link rel="apple-touch-icon" sizes="60x60" href="{% static 'core/img/apple-icon-60x60.png' %}">
@@ -86,6 +89,7 @@
 
     <div class="container">
         {% block content %} {% endblock %}
+        <div class="floating-wpp"></div>
     </div>
 
     <hr>
@@ -138,6 +142,12 @@
     </footer>
 
     <!-- Bootstrap y Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+    </script>
+
+    <script src="{% static 'core/js/floating-wpp.min.js' %}"></script>
     <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'core/js/clean-blog.min.js' %}"></script>
